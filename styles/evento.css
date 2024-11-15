@@ -1,0 +1,185 @@
+body {
+    font-family: "source-sans-pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+.a {
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative;
+    background-image: url('../images/bandera.png');
+    background-size: cover;
+    background-position: center;
+    font-family: "source-sans-pro", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+main {
+    padding: 1rem;
+    max-width: 900px; /* Aumenta el ancho máximo del contenido */
+    margin: 0 auto;
+}
+
+#event-details {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#event-details img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    object-fit: cover; /* Esto asegura que la imagen se recorte si es necesario */
+}
+
+/* Imágenes de los eventos */
+#event-description img,
+#event-location img {
+    display: block;
+    max-width: 80%; /* Asegura que las imágenes no se expandan demasiado */
+    margin: 20px auto; /* Centra la imagen y agrega márgenes */
+    border-radius: 8px;
+    
+}
+
+/* Ajustar específicamente el tamaño de la imagen del recorrido */
+#event-location .recorrido-image {
+    max-width: 50%; /* Reducir el tamaño de la imagen del recorrido al 80% */
+    margin: 20px auto; /* Centrarla y agregar márgenes */
+    display: block; /* Asegurarse de que se comporte como un bloque */
+}
+
+/* Ajustar el iframe del mapa */
+#event-location iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#event-details p {
+    margin: 0.5rem 0;
+}
+
+#event-details strong {
+    color: #951C2A;
+}
+
+h2 {
+    color: #951C2A; 
+    font-size: 1.8rem; 
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Link back */
+a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #951C2A;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "source-sans-pro", sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Listas */
+ul {
+    list-style: inside;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: #951C2A;
+}
+
+ul li::marker {
+    color: #951c2a;
+}
+
+i.fa {
+    margin-right: 8px;
+}
+
+/* Estilo para el botón de "Comprar Entradas" */
+#buy-button {
+    display: inline-block;
+    background-color: #951C2A;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "source-sans-pro", sans-serif;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #ffaa4d;
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 8rem;
+
+        font-size: 1.2rem;
+        font-weight: 200;
+
+        & ul {
+            display: flex;
+            list-style: none;
+            gap: 4rem;
+
+            & li {
+                & a {
+                    color: var(--background-color);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/* Estilo del logo en el encabezado */
+header nav div img {
+    max-width: 150px; /* Tamaño máximo para el logo */
+    height: auto; /* Mantener la proporción original */
+    display: block; /* Asegura que la imagen se muestre correctamente */
+    margin: 0 auto; /* Centra el logo si es necesario */
+}
+
+/* Si deseas que el logo se ajuste de manera responsiva */
+header nav div img {
+    width: 100%;
+    max-width: 100px; /* Ajusta el tamaño máximo según tus necesidades */
+    height: auto; /* Mantener la proporción */
+    object-fit: contain; /* Evitar que la imagen se deforme */
+}
