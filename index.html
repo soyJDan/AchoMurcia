@@ -41,8 +41,7 @@
     <div class="content-header">
         <div>
             <img alt="Murcia Cathedral Background" class="header-image" src="images/background.png">
-
-            <div>
+            <div class="overlay-content">
                 <h1>AchoMurcia</h1>
                 <p>Todo lo que Murcia tiene para ti</p>
                 <button>Conoce los eventos</button>
@@ -53,8 +52,88 @@
 </header>
 <!-- End Header -->
 
+<!-- Search -->
+<div class="search">
+    <!-- Content Search -->
+    <div class="content-search">
+        <h2>Buscar eventos</h2>
+        <div class="divisor"></div>
+        <div class="search-input">
+            <div class="main-input">
+                <label for="name" class="text-regular">Nombre del evento</label>
+                <input type="text" id="name" placeholder="Nombre del evento">
+            </div>
+            <div>
+                <label for="place" class="text-regular">Lugar</label>
+                <input type="text" id="place" placeholder="Lugar del evento">
+            </div>
+            <div>
+                <label for="date" class="text-regular">Fecha del evento</label>
+                <input type="date" id="date" placeholder="Fecha del evento">
+            </div>
+
+            <button>Buscar</button>
+        </div>
+    </div>
+    <!-- End Content Search -->
+</div>
+<!-- End Search -->
+
 <!-- Main -->
 <main>
+    <!-- Carousel -->
+    <div class="carousel">
+
+        <!-- Carousel Buttons -->
+        <div class="carousel-buttons">
+            <button class="prev">
+            </button>
+            <button class="next">
+            </button>
+        </div>
+        <!-- End Carousel Buttons -->
+
+        <!-- Content Carousel -->
+        <div class="content-carousel">
+            <div class="content-first">
+                <div class="card">
+                    <h2 class="content-title">Descubre Murcia</h2>
+                    <div class="image-card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="content-card">
+                        <p>Descubre los mejores eventos de Murcia</p>
+                        <button>Ver eventos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content-second">
+                <div class="card">
+                    <h2 class="content-title">Descubre Murcia</h2>
+                    <div class="image-card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="content-card">
+                        <p>Descubre los mejores eventos de Murcia</p>
+                        <button>Ver eventos</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2 class="content-title">Descubre Murcia</h2>
+                    <div class="image-card">
+                        <img src="" alt="">
+                    </div>
+                    <div class="content-card">
+                        <p>Descubre los mejores eventos de Murcia</p>
+                        <button>Ver eventos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Content Carousel -->
+
+    </div>
+    <!-- End Carousel -->
 
     <!-- Published Articles -->
     <div class="published-articles">
@@ -71,7 +150,7 @@
                 </div>
                 <div>
                     <h3 class="content-subtitle">Nombre del artículo</h3>
-                    <p>Descripción del artículo</p>
+                    <p class="text-regular">Descripción del artículo</p>
                     <a href="#">Leer más...</a>
                 </div>
             </article>
@@ -84,7 +163,7 @@
                 </div>
                 <div>
                     <h3 class="content-subtitle">Nombre del artículo</h3>
-                    <p>Descripción del artículo</p>
+                    <p class="text-regular">Descripción del artículo</p>
                     <a href="#">Leer más...</a>
                 </div>
             </article>
@@ -97,7 +176,7 @@
                 </div>
                 <div>
                     <h3 class="content-subtitle">Nombre del artículo</h3>
-                    <p>Descripción del artículo</p>
+                    <p class="text-regular">Descripción del artículo</p>
                     <a href="#">Leer más...</a>
                 </div>
             </article>
@@ -121,7 +200,7 @@
                 </div>
                 <div>
                     <h3 class="content-subtitle">Nombre Evento</h3>
-                    <p>Descripción evento</p>
+                    <p class="text-regular">Descripción evento</p>
                     <ul>
                         <li><strong>Lugar:</strong> Lugar de evento</li>
                         <li><strong>Fecha:</strong> Fecha del evento</li>
@@ -140,7 +219,7 @@
                 </div>
                 <div>
                     <h3 class="content-subtitle">Nombre Evento</h3>
-                    <p>Descripción evento</p>
+                    <p class="text-regular">Descripción evento</p>
                     <ul>
                         <li><strong>Lugar:</strong> Lugar de evento</li>
                         <li><strong>Fecha:</strong> Fecha del evento</li>
@@ -159,7 +238,7 @@
                 </div>
                 <div>
                     <h3 class="content-subtitle">Nombre Evento</h3>
-                    <p>Descripción evento</p>
+                    <p class="text-regular">Descripción evento</p>
                     <ul>
                         <li><strong>Lugar:</strong> Lugar de evento</li>
                         <li><strong>Fecha:</strong> Fecha del evento</li>
@@ -178,7 +257,7 @@
                 </div>
                 <div>
                     <h3 class="content-subtitle">Nombre Evento</h3>
-                    <p>Descripción evento</p>
+                    <p class="text-regular">Descripción evento</p>
                     <ul>
                         <li><strong>Lugar:</strong> Lugar de evento</li>
                         <li><strong>Fecha:</strong> Fecha del evento</li>
@@ -260,6 +339,9 @@
                 </li>
                 <li>
                     <a href="#">Donaciones</a>
+                </li>
+                <li>
+                    <a href="#">Crear Evento</a>
                 </li>
             </ul>
         </div>
