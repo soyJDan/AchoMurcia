@@ -106,6 +106,94 @@ header {
     }
 }
 
+.form-event {
+    position: fixed;
+    background: rgba(149, 28, 42, 0.8);
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .content-form {
+        background-color: var(--background-color);
+        padding: 2rem;
+        border-radius: 10px;
+        width: 50%;
+
+        & h3 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            & span {
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
+
+        & .form {
+
+            & label {
+                display: block;
+                margin-top: 1rem;
+                margin-bottom: 0.6rem;
+                color: var(--text-color);
+            }
+
+            & input {
+                width: 100%;
+                padding: 1rem;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-family: "source-sans-pro", sans-serif;
+
+                box-shadow: var(--text-color) 0 0 1px;
+
+                &:active, &:focus {
+                    outline: none;
+                }
+            }
+
+            & textarea {
+                width: 100%;
+                padding: 1rem;
+                height: 100px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-family: "source-sans-pro", sans-serif;
+
+                box-shadow: var(--text-color) 0 0 1px;
+
+                &:active, &:focus {
+                    outline: none;
+                }
+            }
+
+            & button {
+                padding: 0 1rem;
+                font-size: 1rem;
+                font-weight: 700;
+                background-color: var(--secundary-color);
+                color: var(--background-color);
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                height: 50px;
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
 .search {
     margin: -4rem 8rem 4rem 8rem;
     background-color: var(--primary-color);
