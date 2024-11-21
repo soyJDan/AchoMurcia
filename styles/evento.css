@@ -198,7 +198,8 @@ footer {
     & .content-footer {
         display: flex;
         justify-content: space-between;
-        padding: 3rem 10rem;
+        padding: 3rem 8rem;
+        gap: 0.5rem;
 
         & .logo {
             align-items: center;
@@ -233,7 +234,7 @@ footer {
                 border: none;
                 border-radius: 5px;
                 cursor: pointer;
-                margin-left: 0.5rem;
+                margin-top: 0.5rem;
                 height: 50px;
             }
         }
